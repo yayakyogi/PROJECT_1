@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome-free/css/all.min.css">
+    <title>Project 1</title>
+</head>
+<body>
+    <nav>
+        <div class="wrap">
+            <div class="title">Pemrograman Web</div>
+            <div class="tblmenubox">
+                <a href="#" class="tblmenu"><i class="fa fa-bars"> Menu</i></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="html.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li><a href="javascript.html">Javascript</a></li>
+                    <li><a href="index.html">PHP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+        <div class="main">
+            <h2>CSS</h2>
+            <center><img src="assets/img/logo-css.svg" class="img" alt="php-logo"></center>
+            <h4>Apa itu CSS? Pengertian dan Cara Kerjanya</h4>
+            <p class="isi-content">
+                CSS adalah bahasa Cascading Style Sheet dan biasanya digunakan untuk mengatur tampilan elemen yang tertulis dalam bahasa markup, seperti HTML. CSS berfungsi untuk memisahkan konten dari tampilan visualnya di situs.
+                CSS dibuat dan dikembangkan oleh W3C (World Wide Web Consortium) pada tahun 1996 untuk alasan yang sederhana. Dulu HTML tidak dilengkapi dengan tags yang berfungsi untuk memformat halaman. Anda hanya perlu menulis markup untuk situs.
+                Tags, seperti , diperkenalkan di HTML versi 3.2, dan ketika itu menyebabkan banyak masalah bagi developer. Karena website memiliki berbagai font, warna background, dan style, maka untuk menulis kembali (rewrite) kode memerlukan proses yang sangat panjang dan sulit. Oleh sebab itu, W3C membuat CSS untuk menyelesaikan masalah ini.
+                HTML dan CSS memiliki keterikatan yang erat. Karena HTML adalah bahasa markup (fondasi situs) dan CSS memperbaiki style (untuk semua aspek yang terkait dengan tampilan website), maka kedua bahasa pemrograman ini harus berjalan beriringan.
+                Tak hanya penting di sisi teknis, CSS juga berpengaruh pada tampilan sebuah website. Tentunya Anda tidak ingin website terlihat seperti situs yang ‘telanjang’ tanpa modifikasi apa pun, bukan?
+            </p>
+            <p class="isi-content">
+                Peramban tidak menampilkan tag HTML, tetapi menggunakannya untuk menafsirkan konten halaman.
+                HTML dapat menyematkan program yang ditulis dalam bahasa scripting seperti JavaScript, yang memengaruhi perilaku dan konten halaman web. Dimasukkannya CSS mendefinisikan tampilan dan tata letak konten. World Wide Web Consortium (W3C), mantan pengelola HTML dan pemelihara standar CSS saat ini, telah mendorong penggunaan CSS pada HTML presentasi eksplisit sejak 1997
+            </p>
+            <h4>Kelebihan CSS</h4>
+            <p class="isi-content">
+                Mudah bagi Anda untuk mengetahui mana website yang menggunakan CSS dan mana yang tidak.
+                Anda pasti pernah membuka website, tapi sesaat kemudian gagal loading dan malah menampilkan background putih yang didominasi teks hitam dan biru. Situasi ini menggambarkan bahwa CSS pada situs tersebut tidak dapat di-load dengan benar atau situs sama sekali tidak memiliki CSS. Umumnya, situs seperti ini hanya menerapkan HTML.
+                Sebelum menggunakan CSS, semua stylizing harus disertakan ke dalam markup HTML. Itu berati Anda harus mendeskripsikan semua background, warna font, alignment, dan lain-lain secara terpisah.
+                Dengan CSS, Anda dapat mengatur tampilan semua aspek pada file yang berbeda, lalu menentukan style, kemudian mengintegrasikan file CSS di atas markup HTML. Alhasil, markup HTML bisa lebih mudah di-maintain.
+                Singkatnya, dengan CSS, Anda tidak perlu mendeskripsikan tampilan dari masing-masing elemen secara berulang-ulang. Anda tidak membuang-buang waktu, kode yang digunakan pun lebih singkat, dan error dapat diminimalisir.
+                Karena opsi kustomisasi yang ada hampir tak terbatas, CSS memungkinkan Anda untuk menerapkan berbagai macam style pada satu halaman HTML. 
+            </p>
+            <p class="source">Source : <a href="https://www.hostinger.co.id/tutorial/apa-itu-css/">https://www.hostinger.co.id/tutorial/apa-itu-css/</a></p>
+        </div>
+        <div class="aside">
+            <div class="isi-aside">
+                <h4>PROFIL</h4>
+                <center><img src="assets/img/logo-user.png" class="img-aside" width="100" height="100" alt="logo"></center>
+                <table cellpadding="5" cellspacing="10" class="tabel">
+                    <tr>
+                        <td>Nama</td>
+                        <td>Tomo</td>
+                    </tr>
+                    <tr>
+                        <td>TTL</td>
+                        <td>00-00-0000</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>The quick brown fox jumps over the lazy dog, The quick brown fox jumps over the lazy dog</td>
+                    </tr>
+                    <tr>
+                        <td>XXX</td>
+                        <td>XXX XXX</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <center>Copyright &copy; GINANTAKA<b>CODE</b> 2020</center>
+    </div>
+</body>
+<!-- Javascript -->
+<script src="assets/jquery.js"></script>
+<script type="text/javascript">
+    $(".tblmenu").click(function(){
+        $(".menu").toggleClass("sh");
+    });
+</script>
+</html>

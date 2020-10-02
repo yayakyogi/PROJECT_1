@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome-free/css/all.min.css">
+    <title>Project 1</title>
+</head>
+<body>
+    <nav>
+        <div class="wrap">
+            <div class="title">Pemrograman Web</div>
+            <div class="tblmenubox">
+                <a href="#" class="tblmenu"><i class="fa fa-bars"> Menu</i></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="html.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li><a href="javascript.html">Javascript</a></li>
+                    <li><a href="index.html">PHP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+        <div class="main">
+            <h2>HTML</h2>
+            <center><img src="assets/img/logo-html.svg" class="img" alt="php-logo"></center>
+            <p class="isi-content">
+                Jika anda ingin mempelajari bagaimana cara membuat website, langkah pertama adalah mempelajari HTML. HTML merupakan dasar dari semua halaman web yang kita lihat di Internet. Tetapi, apa sebenarnya HTML itu?
+            </p>
+            <h4>Apa Pengertian HTML?</h4>
+            <p class="isi-content">
+                Hypertext Markup Language (HTML) adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS) dan bahasa scripting seperti JavaScript dan VBScript.
+                Peramban internet menerima dokumen HTML dari server web atau dari penyimpanan lokal dan membuat dokumen menjadi halaman web multimedia. HTML menggambarkan struktur halaman web secara semantik dan isyarat awal yang disertakan untuk penampilan dokumen.
+                Elemen HTML digambarkan oleh tag, ditulis menggunakan tanda kurung sudut. Tag seperti langsung perkenalkan konten ke dalam halaman. Tag lain seperti  mengelilingi dan memberikan informasi tentang teks dokumen dan mungkin menyertakan tag lain sebagai sub-elemen.
+            </p>
+            <p class="isi-content">
+                Peramban tidak menampilkan tag HTML, tetapi menggunakannya untuk menafsirkan konten halaman.
+                HTML dapat menyematkan program yang ditulis dalam bahasa scripting seperti JavaScript, yang memengaruhi perilaku dan konten halaman web. Dimasukkannya CSS mendefinisikan tampilan dan tata letak konten. World Wide Web Consortium (W3C), mantan pengelola HTML dan pemelihara standar CSS saat ini, telah mendorong penggunaan CSS pada HTML presentasi eksplisit sejak 1997
+            </p>
+            <p class="source">Source : <a href="https://id.wikipedia.org/wiki/HTML">https://id.wikipedia.org/wiki/HTML</a></p>
+        </div>
+        <div class="aside">
+            <div class="isi-aside">
+                <h4>PROFIL</h4>
+                <center><img src="assets/img/logo-user.png" class="img-aside" width="100" height="100" alt="logo"></center>
+                <table cellpadding="5" cellspacing="10" class="tabel">
+                    <tr>
+                        <td>Nama</td>
+                        <td>Tomo</td>
+                    </tr>
+                    <tr>
+                        <td>TTL</td>
+                        <td>00-00-0000</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>The quick brown fox jumps over the lazy dog, The quick brown fox jumps over the lazy dog</td>
+                    </tr>
+                    <tr>
+                        <td>XXX</td>
+                        <td>XXX XXX</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <center>Copyright &copy; GINANTAKA<b>CODE</b> 2020</center>
+    </div>
+</body>
+<!-- Javascript -->
+<script src="assets/jquery.js"></script>
+<script type="text/javascript">
+    $(".tblmenu").click(function(){
+        $(".menu").toggleClass("sh");
+    });
+</script>
+</html>
