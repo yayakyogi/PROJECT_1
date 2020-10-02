@@ -246,7 +246,7 @@ nav{
 @media screen and (max-width:600px){
     .container{
         display: block;
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .main{
         padding: 0 20px 20px;
@@ -263,5 +263,12 @@ nav{
     }
     .tabel{
         font-size: 12pt;
+    }
+    .title,.menu ul li a{
+        line-height: 60px;
+    }
+    .tblmenu{
+        padding: 10px 15px;
+        font-size: 10pt;
     }
 }
