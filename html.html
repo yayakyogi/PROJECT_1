@@ -12,9 +12,10 @@
         <div class="wrap">
             <div class="title">Pemrograman Web</div>
             <div class="tblmenubox">
-                <a href="#" class="tblmenu"><i class="fa fa-bars"> Menu</i></a>
+                <a id="hide-menu" href="#" onClick="closeNav()">&times; Close</a>
+                <a id="show-menu" href="#" class="tblmenu" onClick="openNav()">&#9776; Menu</a>
             </div>
-            <div class="menu">
+            <div class="menu" id="menu-navbar">
                 <ul>
                     <li><a href="html.html">HTML</a></li>
                     <li><a href="css.html">CSS</a></li>
@@ -32,7 +33,7 @@
             <p class="isi-content">
                 Jika anda ingin mempelajari bagaimana cara membuat website, langkah pertama adalah mempelajari HTML. HTML merupakan dasar dari semua halaman web yang kita lihat di Internet. Tetapi, apa sebenarnya HTML itu?
             </p>
-            <h4>Apa Pengertian HTML?</h4>
+            <h3>Apa Pengertian HTML?</h3>
             <p class="isi-content">
                 Hypertext Markup Language (HTML) adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS) dan bahasa scripting seperti JavaScript dan VBScript.
                 Peramban internet menerima dokumen HTML dari server web atau dari penyimpanan lokal dan membuat dokumen menjadi halaman web multimedia. HTML menggambarkan struktur halaman web secara semantik dan isyarat awal yang disertakan untuk penampilan dokumen.
@@ -45,39 +46,79 @@
             <p class="source">Source : <a href="https://id.wikipedia.org/wiki/HTML">https://id.wikipedia.org/wiki/HTML</a></p>
         </div>
         <div class="aside">
-            <div class="isi-aside">
-                <h4>PROFIL</h4>
-                <center><img src="assets/img/logo-user.png" class="img-aside" width="100" height="100" alt="logo"></center>
-                <table cellpadding="5" cellspacing="10" class="tabel">
-                    <tr>
-                        <td>Nama</td>
-                        <td>Tomo</td>
-                    </tr>
-                    <tr>
-                        <td>TTL</td>
-                        <td>00-00-0000</td>
-                    </tr>
-                    <tr>
-                        <td>Alamat</td>
-                        <td>The quick brown fox jumps over the lazy dog, The quick brown fox jumps over the lazy dog</td>
-                    </tr>
-                    <tr>
-                        <td>XXX</td>
-                        <td>XXX XXX</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
+            <div class="wrap-aside">
+                <div class="isi-aside">
+                    <h4>Profil</h4>
+                    <center><img src="assets/img/logo-user.png" class="img-aside" width="150" height="150" alt="logo"></center>
+                    <table cellpadding="5" cellspacing="10" class="tabel">
+                        <tr>
+                            <td>Nama</td>
+                            <td>Tomo</td>
+                        </tr>
+                        <tr>
+                            <td>TTL</td>
+                            <td>00-00-0000</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>The quick brown fox jumps over the lazy dog, The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr>
+                            <td>XXX</td>
+                            <td>XXX XXX</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="isi-aside2">
+                    <h4>Artikel lainnya</h4>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="html.html">
+                                <img src="assets/img/logo-html.svg" width="50" height="50">
+                                <br>HTML
+                            </a>
+                        </li>
+                        <li>
+                            <a href="css.html">
+                                <img src="assets/img/logo-css.svg" width="50" height="50">
+                                <br>CSS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript.html">
+                                <img src="assets/img/logo-js.png" width="50" height="50">
+                                <br>Javascript
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <img src="assets/img/logo-php.png" width="50" height="50">
+                                <br>PHP
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- ./Isi Aside2-->
+            </div><!-- ./wrap-aside-->
+        </div><!-- ./Aside-->
+    </div><!-- ./container-->
     <div class="footer">
         <center>Copyright &copy; GINANTAKA<b>CODE</b> 2020</center>
     </div>
 </body>
 <!-- Javascript -->
-<script src="assets/jquery.js"></script>
 <script type="text/javascript">
-    $(".tblmenu").click(function(){
-        $(".menu").toggleClass("sh");
-    });
+    var menu = document.getElementById('menu-navbar');
+    var showmenu = document.getElementById('show-menu');
+    var hidemenu = document.getElementById('hide-menu');
+    function openNav(){
+        menu.style.display="block";
+        showmenu.style.display="none";
+        hidemenu.style.display="block";
+    }
+    function closeNav(){
+        menu.style.display="none";
+        showmenu.style.display="block";
+        hidemenu.style.display="none";
+    }
 </script>
 </html>
